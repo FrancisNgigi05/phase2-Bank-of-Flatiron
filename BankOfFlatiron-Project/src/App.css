@@ -1,118 +1,47 @@
-/* App container */
-body {
-  font-family:'Times New Roman', Times, serif;
-  background-color: #d8bbbb;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    background-color: rgb(15 23 42);
+    color: rgb(209 213 219);
+
+}
+.tables{
+    display: table;
+    border-spacing: 2.5rem, 2.5rem;
 }
 
-h1 {
-  margin: 20px 0;
-  color: #333;
+th{
+  color:rgb(14 165 233);
 }
 
-/* Transaction Form */
-#new-item-form {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  max-width: 300px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+input{
+    padding:4px 4px 3px 4px;
+    border-radius:5%;
+    margin-right: 10px;
 }
 
-.form-inputs {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 10px;
-}
-
-label {
-  margin-bottom: 5px;
-  font-weight: bold;
-  color: #333;
-}
-
-input {
-  padding: 5px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-/* Transaction Table */
-table {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  width: 80%;
-  margin: 20px auto;
-  border-collapse: collapse;
-}
-
-th, td {
-  padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
-}
-
-th {
-  background-color: #333;
-  color: #fff;
-}
-
-/* Transaction Row */
-tr {
-  transition: background-color 0.2s;
-}
-
-tr:hover {
-  background-color: #f7f7f7;
-}
-
-/* Search Bar */
-input[type="text"] {
-  padding: 5px;
-  margin: 5px 0;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-}
-
-/* Add Transaction Button */
-button {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-  padding: 10px 20px;
-  cursor: pointer;
-  margin-left: auto; /* Align to the right */
-}
-
-#fa-plus {
-  margin-right: 5px;
-}
-
-/* Delete Button */
-button:active {
-  background-color: #0b2941;
-}
-
-button:hover{
-  cursor: pointer;
-  color: crimson;
-}
-
-
-.bank-image {
-  width: 100px;
-  height: auto;
-  margin-left: 10px; 
-}
+.Table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .Table th, .Table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .Table th {
+    background-color: #f2f2f2;
+  }
+  
+  .Table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .Table tr:hover {
+    background-color: #ddd;
+  }
+  
